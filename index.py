@@ -2,9 +2,9 @@ from rubka import Message,Robot,filters,ChatKeypadBuilder
 import rubka
 import time
 
-bot = Robot("BIGECF0VPDCCQJRCQSGGYOWUCDOGTIOAHSJBIZDLGJJXAJLQMPKORFLUTTDZCTDY",show_progress=True,enable_offset=True)
+bot = Robot("",show_progress=True,enable_offset=True)
 
-admin_id = "u0GCjKx0b4511a3f5b947b964d7cbc21"
+admin_id = ""
 
 data_bot = {
     "link":False,
