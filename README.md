@@ -1,18 +1,17 @@
 <div align="center">
 
 # Rubika Group Bot
-
 # 🤖
 
 ### A Persian Rubika Group Bot for Content Locks
 
-A focused Rubika group bot built with Python, featuring admin-only lock commands, automatic deletion of blocked messages, and a live permission list for links, videos, photos, voice, GIFs, stickers, emojis, and text.
+A lightweight group-moderation bot built with Python and `rubka`, featuring admin-only lock commands, automatic deletion of blocked messages, and a live permission list for links, videos, photos, voice, GIFs, stickers, emojis, and text.
 
-# 👨‍💻 Sadra Hatami
+<br>
 
-### Developer • Software Engineer • Creator
+# 👨‍💻 **Sadra Hatami**
 
-[🌐 GitHub](https://github.com/sadra-hatami) • [📧 Email](mailto:sadra.hatami.1732@gmail.com)
+### *Developer • Software Engineer • Creator*
 
 <br>
 
@@ -23,57 +22,83 @@ A focused Rubika group bot built with Python, featuring admin-only lock commands
 [![Persian](https://img.shields.io/badge/Language-Persian-success?style=for-the-badge)](https://en.wikipedia.org/wiki/Persian_language)
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 
+<br>
+
+[🌐 GitHub Profile](https://github.com/sadra-hatami)
+•
+[📧 Email](mailto:sadra.hatami.1732@gmail.com)
+
 </div>
 
 ---
 
 # 📑 Table of Contents
 
-* [📖 About](#-about)
-* [🚀 Why Rubika Group Bot?](#-why-rubika-group-bot)
-* [✨ Key Features](#-key-features)
-* [👑 Group Locks](#-group-locks)
-* [📋 Permission List](#-permission-list)
-* [🛠️ Technologies](#️-technologies)
-* [🚀 Installation](#-installation)
-* [⚙️ Configuration](#️-configuration)
-* [▶️ Usage](#️-usage)
-* [📚 Command Examples](#-command-examples)
-* [🎯 Target Audience](#-target-audience)
-* [🗺️ Roadmap](#️-roadmap)
-* [❓ FAQ](#-faq)
-* [🔐 Security Notes](#-security-notes)
-* [🤝 Contributing](#-contributing)
-* [📬 Contact](#-contact)
-* [📄 License](#-license)
+- [About](#-about)
+- [Related Repositories](#-related-repositories)
+- [Why This Bot?](#-why-this-bot)
+- [Key Features](#-key-features)
+- [Group Locks](#-group-locks)
+- [Permission List](#-permission-list)
+- [Project Structure](#-project-structure)
+- [Technologies](#️-technologies)
+- [Installation](#-installation)
+- [Configuration](#️-configuration)
+- [Usage](#️-usage)
+- [Command Examples](#-command-examples)
+- [Target Audience](#-target-audience)
+- [Roadmap](#️-roadmap)
+- [FAQ](#-faq)
+- [Security Notes](#-security-notes)
+- [Contributing](#-contributing)
+- [Contact](#-contact)
+- [License](#-license)
+- [Copyright](#-copyright)
+- [Support](#-support)
 
 ---
 
 # 📖 About
 
-**Rubika Group Bot** is a Persian Rubika group bot developed with Python and the `rubka` library.
+**Rubika Group Bot** is a small Persian Rubika group bot developed with Python and the `rubka` library.
 
 The admin can lock or unlock common content types with short Persian commands. When a lock is active, messages of that type sent by regular members receive a warning and are deleted. The configured admin is not blocked by the locks.
 
-This repository is the lightweight lock bot. For the larger platform with AI, games, XP, and database-backed settings, see [Rubika Advanced Group Bot](https://github.com/sadra-hatami/Rubika-Advanced-Group-Bot).
+This repository is the lightweight lock bot. A much more complete version also exists, and there is a separate Telegram panel for controlling a Rubika user account.
 
-> **Tagline:** *A Persian Rubika group bot for locking and unlocking common content types with Persian admin commands.*
+> **Tagline:** *A Persian Rubika group bot that locks or unlocks links, videos, photos, voice, GIFs, stickers, emojis, and text, then auto-deletes blocked messages.*
 
 ---
 
-# 🚀 Why Rubika Group Bot?
+# 🔗 Related Repositories
 
-Many groups only need content locks, not a full management platform.
+These three projects are related, but they solve different problems.
 
-**Rubika Group Bot** keeps that path short:
+| Repository | What it is | Library | Where it works |
+|------------|------------|---------|----------------|
+| **[Rubika Group Bot](https://github.com/sadra-hatami/Rubika-Group-Bot)** | Lightweight lock bot (this repo) | `rubka` | Rubika groups |
+| **[Rubika Advanced Group Bot](https://github.com/sadra-hatami/Rubika-Advanced-Group-Bot)** | Full group platform: locks, AI, games, XP, automation, SQLite | `rubka` | Rubika groups |
+| **[Telegram Rubika Account Panel](https://github.com/sadra-hatami/Telegram-Rubika-Account-Panel)** | Telegram remote control for a Rubika user account | Pyrogram + `rubpy` | Telegram → user account |
 
-* One Python file
-* Clear Persian commands
-* A separate lock for each common content type
-* Immediate delete when a lock is on
-* No extra services and no database
+If you need only content locks, stay on this repository.  
+If you need a much more advanced group bot, use [Rubika Advanced Group Bot](https://github.com/sadra-hatami/Rubika-Advanced-Group-Bot).  
+If you want a Telegram-based control panel for a Rubika user account, use [Telegram Rubika Account Panel](https://github.com/sadra-hatami/Telegram-Rubika-Account-Panel).
 
-The project is designed for Persian-speaking Rubika groups that want a small, readable moderation bot.
+---
+
+# 🚀 Why This Bot?
+
+Not every group needs AI, games, and a database.
+
+**Rubika Group Bot** stays small on purpose:
+
+- One main Python file
+- Clear Persian lock commands
+- A separate lock for each common content type
+- Immediate delete when a lock is on
+- No extra services
+
+It is the simple group tool. The advanced bot is the full platform.
 
 ---
 
@@ -81,38 +106,36 @@ The project is designed for Persian-speaking Rubika groups that want a small, re
 
 ## 👑 Administration
 
-* One configured admin
-* Admin-only lock changes
-* Permission list for the current state
-* Private command to read a user ID
+- One configured admin
+- Admin-only lock changes
+- Permission list for the current state
+- Private helper command for reading a user ID
 
 ## 🛡️ Content Locks
 
-* Links
-* Videos
-* Photos
-* Voice messages
-* GIFs
-* Stickers
-* Emojis
-* Text
+- Links
+- Videos
+- Photos
+- Voice messages
+- GIFs
+- Stickers
+- Emojis
+- Text
 
 ## 🗑️ Moderation
 
-* Warning reply when a locked type is sent
-* Automatic deletion of blocked messages
-* Admin messages are not deleted by the locks
+- Warning reply when a locked type is sent
+- Automatic deletion of blocked messages
+- Admin messages are not deleted by the locks
 
 ---
 
 # 👑 Group Locks
 
-Lock states are stored in the `data_bot` dictionary.
+Lock states are stored in memory.
 
-* `True` — that content type is locked
-* `False` — that content type is allowed
-
-Supported commands:
+- `True` — that content type is locked
+- `False` — that content type is allowed
 
 ```text
 لینک ممنوع
@@ -142,13 +165,11 @@ Supported commands:
 
 If a non-admin tries to change a lock, the bot replies that they do not have permission.
 
-These flags live in memory. They reset when the bot process stops.
+These flags reset when the bot process stops. The advanced bot saves group settings in SQLite instead.
 
 ---
 
 # 📋 Permission List
-
-The admin can ask for the current state:
 
 ```text
 لیست دسترسی ها
@@ -157,22 +178,34 @@ The admin can ask for the current state:
 
 The reply shows whether members may send each content type.
 
-A private helper command is also available:
+Private helper:
 
 ```text
 /ad_admin_of_mike12
 ```
 
-In a private chat, this command returns the sender's Rubika user ID.
+In a private chat, this command can return the sender's Rubika user ID. The lock features themselves still belong in a group.
+
+---
+
+# 📁 Project Structure
+
+```text
+Rubika-Group-Bot/
+├── index.py
+└── README.md
+```
+
+Run the bot from `index.py`. Keep the token and admin ID out of the public file.
 
 ---
 
 # 🛠️ Technologies
 
-* Python 3.8+
-* `rubka`
-* Async message handlers
-* In-memory lock flags
+- Python 3.8+
+- `rubka`
+- Async message handlers
+- In-memory lock flags
 
 ---
 
@@ -184,11 +217,13 @@ cd Rubika-Group-Bot
 pip install rubka
 ```
 
+```bash
+python index.py
+```
+
 ---
 
 # ⚙️ Configuration
-
-Do not put the real token inside the repository.
 
 Use environment variables:
 
@@ -204,28 +239,22 @@ bot = Robot(
 admin_id = os.environ["RUBIKA_ADMIN_ID"]
 ```
 
-Then run:
-
 ```bash
 export RUBIKA_BOT_TOKEN="YOUR_BOT_TOKEN"
 export RUBIKA_ADMIN_ID="YOUR_ADMIN_ID"
-python Mike12_Grup.py
+python index.py
 ```
 
 ---
 
 # ▶️ Usage
 
-1. Start the bot.
-2. Add it to a Rubika group.
+1. Start `index.py`.
+2. Add the bot to a Rubika group.
 3. Give it permission to delete messages.
 4. Send lock commands as the admin.
 
-```bash
-python Mike12_Grup.py
-```
-
-The main features work in **groups**. The private chat is only used for the user-ID helper command.
+The main features work in **groups**. A private chat with the bot is not enough for locks.
 
 ---
 
@@ -242,21 +271,22 @@ The main features work in **groups**. The private chat is only used for the user
 
 # 🎯 Target Audience
 
-* Rubika group admins
-* Developers learning bot handlers and filters
-* Anyone who needs a small Persian lock bot
+- Rubika group admins who only need content locks
+- Developers learning simple `rubka` handlers
+- Anyone who wants a small Persian lock bot before moving to the advanced version
 
 ---
 
 # 🗺️ Roadmap
 
-Possible later improvements:
+Possible later improvements for this lightweight bot:
 
-* Save lock states so they survive a restart
-* Support more than one admin
-* Per-group settings instead of one global dictionary
-* Cleaner handler structure
-* Optional log messages for deleted content
+- Save lock states so they survive a restart
+- Support more than one admin
+- Per-group settings
+- Cleaner handler structure
+
+For AI, games, XP, reports, and saved group configuration, use the advanced repository instead of expanding this file too far.
 
 ---
 
@@ -264,15 +294,19 @@ Possible later improvements:
 
 ### Do the locks stay on after restart?
 
-No. The current version keeps flags in memory only.
+No. This version keeps flags in memory only.
 
 ### Can regular members change the locks?
 
 No. Only the configured admin ID can change settings.
 
-### Is this the same as Rubika Advanced Group Bot?
+### Is there a more advanced version?
 
-No. This repository is the smaller lock bot. The advanced project has management, automation, AI, games, and SQLite settings.
+Yes. [Rubika Advanced Group Bot](https://github.com/sadra-hatami/Rubika-Advanced-Group-Bot) is the much larger group platform with moderation packs, automation, AI, games, XP, and SQLite.
+
+### Is there a Telegram control version?
+
+Yes. [Telegram Rubika Account Panel](https://github.com/sadra-hatami/Telegram-Rubika-Account-Panel) is a different project: a Telegram panel that controls a Rubika user account with `rubpy`. It is not this group lock bot.
 
 ### Why were some messages not deleted?
 
@@ -282,25 +316,21 @@ The bot must be running, must be a group admin, and must have delete permission.
 
 # 🔐 Security Notes
 
-* Keep the bot token private.
-* If a token was ever pasted into a chat or public file, create a new token and stop using the old one.
-* Do not commit `.env` files.
-* Add `.env`, secrets, and `__pycache__/` to `.gitignore`.
-* Remove any non-Python text accidentally appended after `bot.run()`.
+- Never commit the bot token or admin ID.
+- If a token was ever published, replace it.
+- Add `.env` and `__pycache__/` to `.gitignore`.
 
 ---
 
 # 🤝 Contributing
 
-Contributions are welcome.
+Contributions are welcome:
 
-You can:
-
-* Report bugs
-* Suggest extra lock types
-* Help store settings on disk
-* Improve command replies
-* Submit Pull Requests
+- Bug reports
+- Extra lock types
+- Saved settings
+- Clearer command replies
+- Pull requests
 
 ---
 
