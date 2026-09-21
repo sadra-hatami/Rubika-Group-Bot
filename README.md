@@ -75,11 +75,12 @@ This repository is the lightweight lock bot. A much more complete version also e
 
 These three projects are related, but they solve different problems.
 
-| Repository | What it is | Library | Where it works |
-|------------|------------|---------|----------------|
-| **[Rubika Group Bot](https://github.com/sadra-hatami/Rubika-Group-Bot)** | Lightweight lock bot (this repo) | `rubka` | Rubika groups |
-| **[Rubika Advanced Group Bot](https://github.com/sadra-hatami/Rubika-Advanced-Group-Bot)** | Full group platform: locks, AI, games, XP, automation, SQLite | `rubka` | Rubika groups |
-| **[Telegram Rubika Account Panel](https://github.com/sadra-hatami/Telegram-Rubika-Account-Panel)** | Telegram remote control for a Rubika user account | Pyrogram + `rubpy` | Telegram → user account |
+| Repository | Role |
+|------------|------|
+| **[Countries War Bot](https://github.com/sadra-hatami/Countries-War-Bot)** | Nation strategy game (this repo) |
+| **[Rubika Group Bot](https://github.com/sadra-hatami/Rubika-Group-Bot)** | Lightweight group lock bot |
+| **[Rubika Advanced Group Bot](https://github.com/sadra-hatami/Rubika-Advanced-Group-Bot)** | Full group management, automation, and extra tools |
+| **[Telegram Rubika Account Panel](https://github.com/sadra-hatami/Telegram-Rubika-Account-Panel)** | Telegram panel for a Rubika user account |
 
 If you need only content locks, stay on this repository.  
 If you need a much more advanced group bot, use [Rubika Advanced Group Bot](https://github.com/sadra-hatami/Rubika-Advanced-Group-Bot).  
